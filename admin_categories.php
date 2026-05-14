@@ -11,7 +11,7 @@ if (isset($_POST['add'])) {
     $name = trim($_POST['name']);
 
     if ($name == '') {
-        $error = "Category name is required";
+        $error = "ዘውግ ስም አልተሞላም!";
     } else {
         try {
             $stmt = $pdo->prepare("INSERT INTO categories (name) VALUES (?)");
@@ -30,7 +30,7 @@ if (isset($_POST['delete'])) {
     $pdo->prepare("DELETE FROM book_categories WHERE category_id=?")->execute([$id]);
     $pdo->prepare("DELETE FROM categories WHERE id=?")->execute([$id]);
 
-    $success = "Category deleted successfully";
+    $success = "ዘውግ በተሳካ ሁኔታ ተሰርዟል!";
 }
 
 // FETCH CATEGORIES
@@ -200,7 +200,7 @@ $categories = $pdo->query("SELECT * FROM categories ORDER BY id DESC")->fetchAll
                     <tr>
                         <td><?= htmlspecialchars($cat['name']) ?></td>
                         <td>
-                            <form method="POST" onsubmit="return confirm('Delete this category?')">
+                            <form method="POST" onsubmit="return confirm('ይህን ዘውግ ማስወገድ እርግጠኛ ነዎት?');">
                                 <input type="hidden" name="delete" value="<?= $cat['id'] ?>">
                                 <button class="delete-btn">ሰርዝ</button>
                             </form>
