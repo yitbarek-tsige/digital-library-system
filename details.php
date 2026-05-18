@@ -44,7 +44,7 @@ $hasCover = $book['cover_image'] && file_exists($book['cover_image']);
             min-height: 100vh;
         }
         .navbar {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0268bb 0%, #e40f3d 100%);
             color: white;
             padding: 16px 32px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);

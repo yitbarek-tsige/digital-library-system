@@ -41,7 +41,7 @@ if (isAdminLoggedIn()) {
         }
         body {
             font-family: Arial;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0268bb 0%, #e40f3d 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -90,7 +90,7 @@ if (isAdminLoggedIn()) {
         .btn-login {
             width: 100%;
             padding: 14px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0268bb 100%, #e40f3d 100%);
             color: white;
             border: none;
             border-radius: 8px;

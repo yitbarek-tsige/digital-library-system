@@ -80,7 +80,7 @@ $error = $_GET['error'] ?? '';
             min-height: 100vh;
         }
         .navbar {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0268bb 0%, #e40f3d 100%);
             color: white;
             padding: 16px 32px;
             display: flex;

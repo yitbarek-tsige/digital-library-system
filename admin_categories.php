@@ -57,7 +57,7 @@ $categories = $pdo->query("SELECT * FROM categories ORDER BY id DESC")->fetchAll
 
         /* NAV */
         .navbar {
-            background: linear-gradient(135deg,#667eea,#764ba2);
+            background: linear-gradient(135deg, #0268bb 0%, #e40f3d 100%);
             color: white;
             padding: 16px 24px;
             display: flex;
